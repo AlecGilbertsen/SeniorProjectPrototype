@@ -5,6 +5,8 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background: rgb(116,23,54);
+    background: linear-gradient(90deg, rgba(116,23,54,1) 0%, rgba(255,255,255,1) 0%, rgba(231,180,91,1) 100%);
 }
 
 .center {
