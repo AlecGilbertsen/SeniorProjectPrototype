@@ -43,6 +43,11 @@ input {
     grid-gap: 10px;
 }
 
+.tester-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
 /* Added styles for the bottom links */
 .bottom-links {
     margin-top: auto;
