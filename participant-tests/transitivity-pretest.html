@@ -82,6 +82,18 @@
               $("#popupModal").modal("show");
           }, 500); // time in milliseconds
       });
+
+        document.addEventListener("DOMContentLoaded", function() {
+         // Get a reference to the close button
+         var closeButton = document.querySelector(".btn.btn-danger[data-dismiss='modal']");
+         // Add a click event listener to the close button
+         closeButton.addEventListener("click", function() {
+         // Close the modal by finding its parent modal element and calling the Bootstrap method to hide it
+         var modal = document.querySelector("#popupModal");
+         var bootstrapModal = bootstrap.Modal.getInstance(modal);
+         bootstrapModal.hide();
+     });
+   });
   </script>
 </body>
 </html>
